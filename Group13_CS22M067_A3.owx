@@ -1,0 +1,998 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/rajma/ontologies/2023/3/assignment3"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/rajma/ontologies/2023/3/assignment3">
+    <Prefix name="" IRI="http://www.semanticweb.org/rajma/ontologies/2023/3/assignment3/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="/Acute_patient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Address"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Age"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Chronic_patient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Dignostic_equipments"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Emergency_room"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Examination_room"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Female"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Gender"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Geriatric_patient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Imaging_room"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Isolation_room"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Item"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Laboratory_services"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Male"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Medication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Mental_health_patient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Name"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Obstetric_patient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Occupational_therapy_services"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Oncology_patient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Operation__room"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Palliative_care_patient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Patient_room"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Patient_type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Pediatric_Patient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Pharmacist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Pharmacy_room"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Pharmacy_services"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Physical_therapy_services"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Physician"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Radiology_services"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Recovery_room"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Services"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Staff_room"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Supply_room"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Trauma_patient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Treatment_equipments"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/billing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/department"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/doctor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/hospital"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/lab_test"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/medical_equipments"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/medical_record"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/nurse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/patient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/receptionist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/room"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/security"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/staff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/surgeon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasAge"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasExamines"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasGender"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasManages"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasName"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasOperates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasPerson"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasPrescribes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasTreats"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasUses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isAdmittedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isAssignedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isLocatedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/leadsDepartment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/worksin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Aditya"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Akash"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Amylase_Test"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Anesthesia_machines"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Aniket"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Blood_Sugar_Test"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/CT_scanners"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Cardiology"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Chinmay"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Deepak"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Divya"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Gynacology"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Hemoglobin_A1C"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Hepatology"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Infusion_pumps"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Lubrex"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/MRI_machines"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/MixogramLX"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Neha"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Nephrology"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Neurology"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Quadrajel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Radiology"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Reena"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Sakshi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Samantha"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Sameer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Sree_Putta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Surgical_instruments"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Thyroid_Function_Test"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/X-ray_machines"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="/Acute_patient"/>
+        <Class IRI="/Patient_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Address"/>
+        <Class IRI="/hospital"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Age"/>
+        <Class IRI="/Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Chronic_patient"/>
+        <Class IRI="/Patient_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Dignostic_equipments"/>
+        <Class IRI="/medical_equipments"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Emergency_room"/>
+        <Class IRI="/room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Examination_room"/>
+        <Class IRI="/room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Female"/>
+        <Class IRI="/Gender"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Gender"/>
+        <Class IRI="/Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Geriatric_patient"/>
+        <Class IRI="/Patient_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Imaging_room"/>
+        <Class IRI="/room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Isolation_room"/>
+        <Class IRI="/room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Item"/>
+        <Class IRI="/hospital"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Laboratory_services"/>
+        <Class IRI="/Services"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Male"/>
+        <Class IRI="/Gender"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Medication"/>
+        <Class IRI="/Item"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Mental_health_patient"/>
+        <Class IRI="/Patient_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Name"/>
+        <Class IRI="/Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Obstetric_patient"/>
+        <Class IRI="/Patient_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Occupational_therapy_services"/>
+        <Class IRI="/Services"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Oncology_patient"/>
+        <Class IRI="/Patient_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Operation__room"/>
+        <Class IRI="/room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Palliative_care_patient"/>
+        <Class IRI="/Patient_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Patient_room"/>
+        <Class IRI="/Operation__room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Patient_type"/>
+        <Class IRI="/patient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Pediatric_Patient"/>
+        <Class IRI="/Patient_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Person"/>
+        <Class IRI="/hospital"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Pharmacist"/>
+        <Class IRI="/staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Pharmacy_room"/>
+        <Class IRI="/room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Pharmacy_services"/>
+        <Class IRI="/Services"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Physical_therapy_services"/>
+        <Class IRI="/Pharmacy_services"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Physician"/>
+        <Class IRI="/doctor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Radiology_services"/>
+        <Class IRI="/Services"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Recovery_room"/>
+        <Class IRI="/room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Services"/>
+        <Class IRI="/hospital"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Staff_room"/>
+        <Class IRI="/room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Supply_room"/>
+        <Class IRI="/room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Trauma_patient"/>
+        <Class IRI="/Patient_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Treatment_equipments"/>
+        <Class IRI="/medical_equipments"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/billing"/>
+        <Class IRI="/lab_test"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/department"/>
+        <Class IRI="/hospital"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/doctor"/>
+        <Class IRI="/staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/lab_test"/>
+        <Class IRI="/patient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/medical_equipments"/>
+        <Class IRI="/hospital"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/medical_record"/>
+        <Class IRI="/patient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/nurse"/>
+        <Class IRI="/staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/patient"/>
+        <Class IRI="/Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/receptionist"/>
+        <Class IRI="/staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/room"/>
+        <Class IRI="/hospital"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/security"/>
+        <Class IRI="/staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/staff"/>
+        <Class IRI="/Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/surgeon"/>
+        <Class IRI="/doctor"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="/Chronic_patient"/>
+        <NamedIndividual IRI="/Aditya"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Male"/>
+        <NamedIndividual IRI="/Aditya"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/patient"/>
+        <NamedIndividual IRI="/Aditya"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Male"/>
+        <NamedIndividual IRI="/Akash"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/security"/>
+        <NamedIndividual IRI="/Akash"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/lab_test"/>
+        <NamedIndividual IRI="/Amylase_Test"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Treatment_equipments"/>
+        <NamedIndividual IRI="/Anesthesia_machines"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Male"/>
+        <NamedIndividual IRI="/Aniket"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Mental_health_patient"/>
+        <NamedIndividual IRI="/Aniket"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/patient"/>
+        <NamedIndividual IRI="/Aniket"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/lab_test"/>
+        <NamedIndividual IRI="/Blood_Sugar_Test"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Dignostic_equipments"/>
+        <NamedIndividual IRI="/CT_scanners"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/department"/>
+        <NamedIndividual IRI="/Cardiology"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Male"/>
+        <NamedIndividual IRI="/Chinmay"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Obstetric_patient"/>
+        <NamedIndividual IRI="/Chinmay"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/patient"/>
+        <NamedIndividual IRI="/Chinmay"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Male"/>
+        <NamedIndividual IRI="/Deepak"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/doctor"/>
+        <NamedIndividual IRI="/Deepak"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Female"/>
+        <NamedIndividual IRI="/Divya"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/nurse"/>
+        <NamedIndividual IRI="/Divya"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/department"/>
+        <NamedIndividual IRI="/Gynacology"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/lab_test"/>
+        <NamedIndividual IRI="/Hemoglobin_A1C"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/department"/>
+        <NamedIndividual IRI="/Hepatology"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Treatment_equipments"/>
+        <NamedIndividual IRI="/Infusion_pumps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Medication"/>
+        <NamedIndividual IRI="/Lubrex"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Dignostic_equipments"/>
+        <NamedIndividual IRI="/MRI_machines"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Medication"/>
+        <NamedIndividual IRI="/MixogramLX"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Female"/>
+        <NamedIndividual IRI="/Neha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/nurse"/>
+        <NamedIndividual IRI="/Neha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/department"/>
+        <NamedIndividual IRI="/Nephrology"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/department"/>
+        <NamedIndividual IRI="/Neurology"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Medication"/>
+        <NamedIndividual IRI="/Quadrajel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/department"/>
+        <NamedIndividual IRI="/Radiology"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Female"/>
+        <NamedIndividual IRI="/Reena"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/doctor"/>
+        <NamedIndividual IRI="/Reena"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Female"/>
+        <NamedIndividual IRI="/Sakshi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Trauma_patient"/>
+        <NamedIndividual IRI="/Sakshi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/patient"/>
+        <NamedIndividual IRI="/Sakshi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Female"/>
+        <NamedIndividual IRI="/Samantha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/receptionist"/>
+        <NamedIndividual IRI="/Samantha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Male"/>
+        <NamedIndividual IRI="/Sameer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Palliative_care_patient"/>
+        <NamedIndividual IRI="/Sameer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/patient"/>
+        <NamedIndividual IRI="/Sameer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Male"/>
+        <NamedIndividual IRI="/Sree_Putta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Pharmacist"/>
+        <NamedIndividual IRI="/Sree_Putta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Treatment_equipments"/>
+        <NamedIndividual IRI="/Surgical_instruments"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/lab_test"/>
+        <NamedIndividual IRI="/Thyroid_Function_Test"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Dignostic_equipments"/>
+        <NamedIndividual IRI="/X-ray_machines"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasUses"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isAdmittedTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasAge"/>
+        <Class IRI="/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasExamines"/>
+        <Class IRI="/doctor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasGender"/>
+        <Class IRI="/staff"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasManages"/>
+        <Class IRI="/receptionist"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasName"/>
+        <Class IRI="/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasOperates"/>
+        <Class IRI="/surgeon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasPerson"/>
+        <Class IRI="/room"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasPrescribes"/>
+        <Class IRI="/doctor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasTreats"/>
+        <Class IRI="/doctor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasUses"/>
+        <Class IRI="/lab_test"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isAdmittedTo"/>
+        <Class IRI="/patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isAssignedTo"/>
+        <Class IRI="/nurse"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isLocatedIn"/>
+        <Class IRI="/room"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/leadsDepartment"/>
+        <Class IRI="/doctor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/worksin"/>
+        <Class IRI="/staff"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasAge"/>
+        <Class IRI="/Age"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasExamines"/>
+        <Class IRI="/patient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasGender"/>
+        <Class IRI="/Gender"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasManages"/>
+        <Class IRI="/medical_record"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasName"/>
+        <Class IRI="/Name"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasOperates"/>
+        <Class IRI="/patient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasPerson"/>
+        <Class IRI="/patient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasPrescribes"/>
+        <Class IRI="/Medication"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasTreats"/>
+        <Class IRI="/patient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasUses"/>
+        <Class IRI="/medical_equipments"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/isAdmittedTo"/>
+        <Class IRI="/room"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/isAssignedTo"/>
+        <Class IRI="/patient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/isLocatedIn"/>
+        <Class IRI="/department"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/leadsDepartment"/>
+        <Class IRI="/department"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/worksin"/>
+        <Class IRI="/department"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Acute_patient</IRI>
+        <Literal>Patient who require treatment for short term illness.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Address</IRI>
+        <Literal>Concept denoting the address details of the person like street, city, state and zip</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Age</IRI>
+        <Literal>Age of the person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Chronic_patient</IRI>
+        <Literal>Describes a patient having a disease for long time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Dignostic_equipments</IRI>
+        <Literal>Medical equipment used for diagnosis purpose</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Female</IRI>
+        <Literal>It is a primitive concept referring to the real world gender female</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Item</IRI>
+        <Literal>Concept denoting the medicine item details of the patient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Male</IRI>
+        <Literal>It is a primitive concept referring to the real world gender male</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Medication</IRI>
+        <Literal>Medicine and dosage details of the patient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Name</IRI>
+        <Literal>Name of the person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Oncology_patient</IRI>
+        <Literal>Patient suffering from illness related to tumors.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Pediatric_Patient</IRI>
+        <Literal>Patient having age less than 13 years is child patient.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Person</IRI>
+        <Literal>Represents a human being</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Pharmacist</IRI>
+        <Literal>A person on staff from the hospital  who looks after pharmacy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Treatment_equipments</IRI>
+        <Literal>Equipment used during surgery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/department</IRI>
+        <Literal>Concept which describes the place where each staff member works</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/doctor</IRI>
+        <Literal>A person who diagnose and treats the patients</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/hasAge</IRI>
+        <Literal>(XXX,22 )
+XXX is 22 years old.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/hasGender</IRI>
+        <Literal>XXX,gender )
+XXX is male.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/hasName</IRI>
+        <Literal>(Person, Name)
+Person has a Name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/lab_test</IRI>
+        <Literal>Lab test prescribed to the patient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/leadsDepartment</IRI>
+        <Literal>Doctoer leads department</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/medical_equipments</IRI>
+        <Literal>Different types of equipments used</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/medical_record</IRI>
+        <Literal>Describes the detailed report about patient disease</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/nurse</IRI>
+        <Literal>A female person of staff who assists doctor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/patient</IRI>
+        <Literal>A person who comes to hospital due to some disease</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/receptionist</IRI>
+        <Literal>A person on staff from the hospital  who tracks the record of patients.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/security</IRI>
+        <Literal>Concept denoting the details of Security staff</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/staff</IRI>
+        <Literal>Concept denoting the employees of the hospital</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/worksin</IRI>
+        <Literal>Staff works in department</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
